@@ -1,13 +1,13 @@
 import java.util.*;
-public class pattern6 {
+public class pattern4 {
     public static void main(StringTest[]args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=n-i;j++){
+        for(int i=n;i>=1;i--){
+            for(int j=n;j>i;j--){
                 System.out.print(" ");
             }
-            for(int k=1;k<=(2*i-1);k++){
+            for(int k=(2*i-1);k>0;k--){
             System.out.print("*");
         }
     
@@ -17,4 +17,3 @@ public class pattern6 {
     }
     
 }
-
